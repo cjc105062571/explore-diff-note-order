@@ -1,0 +1,14 @@
+---
+layout: page
+title: Exploring the Possibility of Generating Music Autoregressively in Non-Chronological Order
+description: Exploring the Possibility of Generating Music Autoregressively in Non-Chronological Order
+sitemap:
+    priority: 0.7
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+<header class="major">
+  <h1><a>Abstract</a></h1>
+</header>
+
+In music generation, it is not mandatory to generate musical notes in chronological order as it is done for language models. Even though transformers are commonly used in autoregressive ways to generate tokens from left to right, we can guide transformers to generate notes non-chronologically by rearranging the input order. To realize this idea, we extend an existing representation to allow notes to show up in any order, and experiment with three kinds of orders to compare their behavior. We propose to group tokens related to one note and make our model predict them in one step, which greatly improves the training efficiency. Moreover, we show that gen- erating music non-chronologically allows for user control of the complexity of music.
